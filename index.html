@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Accesso al portale</title>
+<!-- Include CSS File Here -->
+<link rel="stylesheet" href="css/style.css"/>
+<!-- Include JS File Here -->
+<script src="js/login.js"></script>
+<style>
+body{
+background-image:URL("3.gif");
+background-size:cover;
+}
+div {
+width: 400px;
+height: 280px;
+background: #025669;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -120px;
+margin-left: -200px;
+}
+label {
+    display: block;
+    text-align: center;
+}
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+<br>
+<br>
+<h1 style="text-align:center";><p style="color: white">AUTENTICAZIONE AL PORTALE</h1></p>
+<div class="container">
+<div class="main">
+<form id="form_id" method="post" name="myform">
+<label><p style="color: white">UTENTE:</p></label>
+<p align="center"><input type="text" name="username" id="username"/></p>
+<br><label><p style="color: white">PASSWORD:</p></label>
+<p align="center"><input type="password" name="password" id="password"/></br></p>
+<br><p align="center"><input type="button" value="LOGIN" id="submit" onclick="validate()"/></p></br>
+<p style="color: white">Per problemi tecnici cliccare <a href="mailto:nicholas.fattori01@iislonigo.onmicrosoft.com">qui</a></p>
+</form>
+
+</div>
+</div>
+
+</body>
+</html>
+
+<!--THE JS JAVASCRIPT PART BELOW-->
+
+<head>
+<script>
+
+var possibilità = 4; // Variable to count number of attempts.
+// Below function Executes on click of login button.
+function validate() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if (username == "studente" && password == "fattori") {
+        alert("Autenticazione riuscita");
+        window.location = "home.html"; // Redirecting to other page.
+        return false;
+    } else {
+        possibilità--; // Decrementing by one.
+        alert("Hai " + possibilità + " possibilità");
+        // Disabling fields after 3 attempts.
+        if (possibilità == 0) {
+            document.getElementById("username").disabled = true;
+            document.getElementById("password").disabled = true;
+            document.getElementById("submit").disabled = true;
+            return false;
+        }
+    }
+}
+</script>
+</head> 
