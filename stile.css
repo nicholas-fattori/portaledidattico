@@ -43,7 +43,7 @@ aside {
 footer {
     border: none;
     border-radius: 10px;
-    background-color: rgba(0, 255, 0, 0.9);
+    background-color: rgba(0, 255, 255, 0.9);
     clear: both;
     text-align: center;
     margin: 1%;
@@ -76,3 +76,4 @@ aside li a {
   justify-content: center; 
   align-items: center;     
 }
+
