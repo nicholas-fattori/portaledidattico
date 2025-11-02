@@ -1,3 +1,4 @@
 function mostra_mail() {
-    document.write("mail: <a href=\"mailto:viis01100n@istruzione.it\">viis01100n@istruzione.it</a> - pec: <a href=\"mailto:viis01100n@pec.istruzione.it\">viis01100n@pec.istruzione.it</a>");
+    document.write("Per contattare il docente: <a href=\"mailto:nicholas.fattori01@iislonigo.onmicrosoft.com\">nicholas.fattori01@iislonigo.onmicrosoft.com</a>");
+
 }
