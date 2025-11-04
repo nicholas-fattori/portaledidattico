@@ -21,7 +21,7 @@ nav {
     padding: 1%;
 }
 main {
-    float: left;
+    float: center;
     border: none;
     border-radius: 10px;
     background-color: white;
@@ -76,4 +76,5 @@ aside li a {
   justify-content: center; 
   align-items: center;     
 }
+
 
