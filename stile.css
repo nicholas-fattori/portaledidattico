@@ -10,8 +10,11 @@ background-size: cover;
 header {
     border: none;
     margin: 0;
-    padding: 1%;
-color: white;
+    padding: 5%;
+color: #f1f2ee;
+    font-size: 20px;
+    font-family: optima;
+    text-align: center;
 }
 nav {
     border: none;
@@ -78,6 +81,7 @@ aside li a {
   justify-content: center; 
   align-items: center;     
 }
+
 
 
 
