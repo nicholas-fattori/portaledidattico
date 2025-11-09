@@ -98,8 +98,63 @@ Il comportamento di questi portatori di carica è influenzato da fattori come st
 <div class="container">
 <img src="tipidiodi.png" width="400" height="200" alt="Simbologie grafiche diodi" />
 </div>
-<p>Esempio datasheet: Diodo1N4007</p>
+<p>Esempio datasheet: <a href="Diodo1N4007.pdf" target="_blank" title="Datasheet 1N4007">Diodo1N4007</a></p>
+<p>Calcolo resistenza su caduta di tensione led <a href="EsercizioCalcoloResistenzaLed.pdf" target="_blank" title="Caduta di tensione resistenza led">esercizio svolto</a></p>
+<h2>Relè</h2>
+<p>E' un dispositivo pilotato a distanza che consente di commutare più circuiti, sia separatamente che in gruppo. Potrebbe essere paragonato ad un interruttore, con la differenze che, il suo comando, avviene in modo automatico tramite un apposto circuito, e grazie alla corrente elettrica.</p>
+<p>Il relè è composto da una bobina di filo di rame (con due terminali) avvolta intorno ad un nucleo di materiale ferromagnetico, e da una serie di contatti elettrici azionabili dall’apposita staffa.</p>
+<p>La corrente percorre la bobina, il nucleo si magnetizza e attrae a sé la staffa, che a sua volta sposta la lamella centrale dei contatti operando una commutazione, quindi uno spostamento.</p>
+<div class="container">
+<img src="rele.jpg" width="400" height="200" alt="Un relè" />
+</div>
+<p>Comunemente le tensioni di funzionamento sono di 5, 12 o 24V.</p>
+<h2>Transistor</h2>
+<p>Considerato il componente elettronico per eccellenza. Prima delle sua invenzione, i circuiti elettronici utilizzavano valvole termoioniche.</p>
+<p>E’ stato il primo componente elettronico attivo (perché a partire da una fonte esterna in ingresso restituisce in uscita un segnale più potente) inventato. Alcuni metalli, una volta portati ad alte temperature, emettono degli elettroni liberi che fluiscono all’interno della valvola (verosimilmente possiamo paragonarle alle vecchie lampadine a incandescenza).</p>
+<p>Il primo transistor risale al 1925 costruito in Canada da Liliefeld, realizzato mettendo a contatto due elettrodi puntiformi con un diaframma di germanio di tipo N (come già si faceva per il diodo), successivamente si iniziò ad utilizzare anche il noto silicio, dimostratosi da subito molto più versatile ed efficiente. Negli anni ’70 inizia la corsa ai circuiti integrati (logici) il flip-flop ne è l’esempio più classico ed in seguito i circuiti analogici. Oggi in un millimetro quadrato troviamo integrati milioni di transistori che svolgono diverse funzioni.</p>
+<p>Gli elementi base sono semiconduttori: germanio e silicio, come già detto. A differenza dei conduttori, come sappiamo, qui sono presenti pochi elettroni in movimento libero. Dove l’elettrone si sposta lascia una lacuna nell’atomo, cioè di carica positiva, pari a quella dell’elettrone, ovviamente con segno opposto. Elettroni e lacune sono in numero pari nel semiconduttore puro. Se lo droghiamo con un elemento che crea eccesso di elettroni (cariche negative) o protoni (positive) otteniamo semiconduttori drogati rispettivamente di tipo N e di tipo P.</p>
+<p>Un transistor si ottiene con doppia giunzione. E’ un componente elettronico con 3 piedini, rappresentanti base (B), emettitore (E) e collettore (C), riscontrabili anche nella foto sotto riportata. Il terminale di base è detto “collegamento fra le teste” e si dividono in NPN e PNP.</p>
+<div class="container">
+<img src="transistor.png" width="400" height="200" alt="Un transistor" />
+</div>
+<p>Cominciando dal transistor NPN (a sinistra) osserviamo che la corrente, proveniente dal polo positivo, entra nel collettore, una seconda corrente definita “di comando” entra nella base. Dall’emettitore esce quindi una corrente ie = ic + ib, che torna al polo negativo dell’alimentazione.
+Nel caso del transistor PNP è necessario montarlo rovesciato, e dunque la corrente proveniente dal polo positivo entrerà nell’emettitore. Parte di questa uscirà poi dalla base, costituendo la corrente di comando ib. Mentre nel transistor npn la corrente è entrante, nel transistor pnp osserviamo dunque che la corrente di base è uscente.
+</p>
+<p>Le lettere PNP e NPN mostrano la tensione richiesta dai tre componenti. Nel transistor NPN la corrente di conduzione è principalmente di elettroni (infatti ha una conduzione più alta, in quanto gli elettroni sono più mobili), mentre nel PNP la corrente di conduzione è dovuta ai fori. Quindi, nel transistor NPN la corrente scorre dal collettore all’emettitore poiché l’alimentazione positiva è data alla base, mentre nel transistor PNP la corrente scorre dall’emettitore al collettore.</p>
+<h3>Transistor BJT</h3>
+<p>Detto transistor a giunzione bipolare è largamente usato nel campo elettronico analogico principalmente come amplificatore di corrente e interruttore. Costituisce la famiglia più diffusa insieme al transistor ad effetto di campo, è in grado di offrire una maggiore corrente in uscita con lo svantaggio però, di non avere il terminale isolato (gate).</p>
+<p>Può controllare la corrente che lo attraversa mediante applicazione di tensione tra i suoi terminali. Tale dispositivo coinvolge sia gli elettroni, sia le lacune (portatori di carica maggioritari) e pertanto è detto bipolare. Viene spesso utilizzato come interruttore adatto per attivare o disattivare circuiti o trasduttori ad esempio (i trasduttori o sensori sono dispositivi che acquisiscono in ingresso una grandezza fisica esprimendo in uscita una grandezza elettrica con valore di funzione della grandezza entrante). In tutte le applicazioni il funzionamento di un transistor è legato a due particolari strati di giunzione bipolare: saturazione (ON) e interdizione (OFF).</p>
+<p>Nella saturazione è indispensabile che le due giunzioni siano polarizzate direttamente (ON). Nell’interdizione il transistor non conduce (OFF), si verifica quando entrambe le giunzioni sono polarizzate inversamente.</p>
+<div class="container">
+<img src="bjt.png" width="400" height="200" alt="Transistor bjt" />
+</div>
+<p>Un transistor npn non può essere interdetto se la tensione V è minore o uguale a zero, mentre un altro di tipo pnp può considerarsi interdetto se la tensione V è maggiore o uguale a zero. Idealmente il transistor passa nello stato OFF ed ON e viceversa istantaneamente. Se si verificasse questo fenomeno non avremmo dispersioni di calore da parte del transistor, perché esso non assorbe potenza: nello stato di interdizione non passa corrente e nello stato di saturazione è presente una tensione nulla.</p>
+<p>Nell’elettronica digitale il transistor è usato come amplificatore: una corrente di base controlla la corrente di collettore e, tenuto conto della resistenza tra collettore ed emettitore, una certa corrente base controlla la corrente che scorre tra collettore ed emettitore.</p>
+<p>Riassumendo, un transistor in funzione della tensione di polarizzazione (tensione applicata alla base), può funzionare in tre zone:</p>
+<li>INTERDIZIONE (interruttore aperto): resistenza massima tra collettore ed emettitore non permettendo passaggio di corrente tra due terminali</li>
+<li>SATURAZIONE (interruttore chiuso): resistenza minima tra collettore ed emettitore, passaggio della massima corrente tra questi due terminali</li>
+<li>LINEARE: zona usata nell’amplificazione dei segnali</li>
+<h3>Transistor MOSFET</h3>
+<p>Detto anche transistor a semiconduttore di ossido di metallo ad effetto campo. E’ un dispositivo che commuta o amplifica un segnale elettronico. Ha reso i computer molto più piccoli ed efficienti. I MOSFET sono cruciali per i segnali digitali e analogici e trovano impiego nei microprocessori e nei circuiti integrati. Fondamentali in logica digitale per i computer ad esempio, e impiegati invece come interruttori e resistori di precisione in campo analogico. Sono costituiti da un substrato di materiale semiconduttore (solitamente silicio) ed uno strato di metallo che separa lo strato centrale di ossigeno, su cui confluisce l’energia che scorre tra gli altri due strati. A questa struttura vengono affiancati i due terminali: source e drain.</p>
+<div class="container">
+<img src="mosfet.jpeg" width="400" height="200" alt="Transistor mosfet" />
+</div>
+<p>La tensione viene applicata alla fonte sullo strato metallico, quello di ossigeno serve come cancello che permette all’elettricità di fluire tra gli altri due strati. L’energia elettrica viene dissipata nello strato semiconduttore e trasferita ad una pletora di dispositivi che regolano funzioni logiche. Se non viene applicata elettricità alla sorgente, il MOSFET si spegne.</p>
+<p>Il suo più notevole utilizzo è nei circuiti integrati, digitali e di memoria come RAM e ROM ed anche la CPU. E’ simile al transistor bipolare, presenta due varianti:</p>
+<li>con drogaggio di tipo P chiamate PMOS e NMOS</li>
+<li>utilizza transistori a effetto di campo metallo-ossido-semiconduttore con drogaggio di tipo N</li>
+<p>Se usate entrambe le tipologie è denominato CMOS.</p>
+<p>Il suo vantaggio è rappresentato dall'integrazione in circuiti di piccola scala e di diversa tipologia. Supporta sia tensioni positive e negative (può controllare oltre 2.000 Watt di potenza). Come contro è incline al surriscaldarsi date le grandi prestazioni elettriche e dunque potrebbe ridurre la performance nei circuiti.</p>
+<h3>BJT vs MOSFET</h3>
+<div class="container">
+<img src="versus.png" width="400" height="200" alt="BJT vs MOSFET" />
+</div>
+<p>In elettronica digitale prevale nettamente il MOSFET per la principale caratteristica di essere auto-isolato dunque che può essere implementato nella stessa regione di silicio assieme ad altri componenti anche uguali senza interferire. Questo facilita la connessione serie e parallelo riducendo costi e complessità progettuale (ecco perché lo troviamo nei microchip), ma con i BJT non è possibile. Se invece necessitiamo di commutazione, trasferimento di potenza e convertitori di potenza è bene utilizzare un transistor BJT. Il BJT riesce a mantenere potenze fino a 2kW e correnti fino a 500A. C’è da considerare però, che per piccole potenze abbiamo bisogno di frequenze di commutazione elevate, dove il MOSFET rappresenta di nuovo la scelta ottimale. Ricapitoliamo:</p>
+<li>MOSFET può gestire cambi di stato con frequenze nell’ordine dei MHz</li>
+<li>BJT riesce a gestire frequenze di commutazione al di sotto dei 100 kHz</li>
+    
 </main>
+
 
         
 
@@ -117,6 +172,7 @@ Il comportamento di questi portatori di carica è influenzato da fattori come st
 
 
 </html>
+
 
 
 
