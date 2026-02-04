@@ -154,13 +154,12 @@ Nel caso del transistor PNP è necessario montarlo rovesciato, e dunque la corre
 <li>BJT riesce a gestire frequenze di commutazione al di sotto dei 100 kHz</li>
 
             <h2>Teoria sui segnali</h2>
-            <p>I segnali in elettronica
-
-Nel nostro campo il funzionamento di sensori, centraline e attuatori si basa sull’elaborazione di segnali elettrici. Un segnale elettrico è una grandezza, solitamente una tensione o una corrente, che varia nel tempo e che trasporta un’informazione.
+            <p>Nel nostro campo il funzionamento di sensori, centraline e attuatori si basa sull’elaborazione di segnali elettrici. Un segnale elettrico è una grandezza, solitamente una tensione o una corrente, che varia nel tempo e che trasporta un’informazione.
 Un segnale analogico è un segnale che può assumere infiniti valori all’interno di un intervallo continuo. Questo tipo di segnale è particolarmente adatto a rappresentare fenomeni fisici reali, che cambiano gradualmente.
 Esempio nell’auto: il sensore di temperatura del liquido di raffreddamento fornisce alla centralina una tensione analogica che varia, ipotizziamo, da 0,5 V (motore freddo) a 4,5 V (motore caldo). La variazione è continua e proporzionale alla temperatura.
-                
-Un segnale analogico può essere misurato con:
+            </p>
+            
+<p>Un segnale analogico può essere misurato con:
 • multimetro (lettura del valore istantaneo)
 • oscilloscopio (visualizzazione della variazione nel tempo)
 Il principale svantaggio dei segnali analogici è la loro sensibilità ai disturbi elettrici, molto presenti nei veicoli auto o moto.
@@ -174,9 +173,9 @@ Questi livelli corrispondono a specifici valori di tensione, ad esempio:
 • 4–5 V → HIGH
 Esempio inerente l’auto:  un sensore di velocità ruota ABS genera un impulso che corrisponde al passaggio di un dente della ruota fonica davanti al sensore.
 
-Con un oscilloscopio si osserverebbe chiaramente una sequenza di impulsi, mentre con un multimetro si potrebbero leggere solo un valore medio, poco significativo.
+Con un oscilloscopio si osserverebbe chiaramente una sequenza di impulsi, mentre con un multimetro si potrebbero leggere solo un valore medio, poco significativo.</p>
 
-Graficazione dei segnali
+<p>Graficazione dei segnali
 Per studiare un segnale elettrico si utilizza una rappresentazione grafica (come visto in classe):
 • sull’asse orizzontale (X) è riportato il tempo
 • sull’asse verticale (Y) è riportata la tensione
@@ -186,9 +185,9 @@ Questa rappresentazione permette di analizzare:
 • periodo e frequenza
 • forma d’onda
                 
-Nel settore automotive è fondamentale riconoscere a colpo d’occhio se un segnale è corretto o alterato.
+Nel settore automotive è fondamentale riconoscere a colpo d’occhio se un segnale è corretto o alterato.</p>
 
-Studio del segnale su oscilloscopio
+<p>Studio del segnale su oscilloscopio
 
 L’oscilloscopio è lo strumento più importante per la diagnostica elettronica.
 Con l’oscilloscopio è possibile:
@@ -204,9 +203,9 @@ Esempio pratico: Durante la diagnosi di un iniettore, l’oscilloscopio permet
 • presenza di sovratensioni
 • corretto pilotaggio dell’attuatore
 
-Il multimetro, in questo caso, non sarebbe sufficiente.
+Il multimetro, in questo caso, non sarebbe sufficiente.</p>
 
-Onda quadra 
+<p>Onda quadra 
 
 L’onda quadra è un segnale periodico che alterna due livelli di tensione ben definiti.
 È molto diffusa perché:
@@ -221,7 +220,8 @@ Parametri importanti:
 • periodo
 • frequenza
 
-Modulazione PWM (Pulse Width Modulation)
+</p>
+<p>Modulazione PWM (Pulse Width Modulation)
 
 PWM è una tecnica che consente di controllare la potenza fornita a un carico variando il tempo di attivazione del segnale, mantenendo costante l’ampiezza.
 Concetto chiave:  non si cambia la tensione, ma per quanto tempo viene applicata.
@@ -232,7 +232,7 @@ Misurazione elettrica:
 • con oscilloscopio → si vede chiaramente la variazione degli impulsi
 • con multimetro → si legge una tensione media
 
-Duty Cycle
+</p><p>Duty Cycle
 
 Il duty cycle rappresenta la percentuale di tempo in cui il segnale è attivo (ON) rispetto al periodo totale.
 Formula:
@@ -244,8 +244,8 @@ Esempi:
 • 50% → potenza media
 • 80% → alta potenza
 Nel controllo degli iniettori benzina, la quantità di carburante iniettata dipende direttamente dal duty cycle.
-
-Trasduttori
+</p>
+<p>Trasduttori
 
 Un trasduttore è un dispositivo che trasforma una grandezza fisica in un segnale elettrico o viceversa.
 
@@ -265,7 +265,7 @@ Esempi:
                 
 Sono spesso controllati tramite segnali PWM.
 
-Diagnostica centraline ECU
+</p><p>Diagnostica centraline ECU
 
 Le centraline elettroniche controllano praticamente ogni sistema dell’auto moderna.
 
@@ -280,7 +280,7 @@ La comunicazione tra centraline avviene tramite reti:
 • FlexRay
 Una corretta diagnosi richiede la conoscenza dei segnali elettrici e la capacità di interpretarli correttamente.
 
-Reti CAN BUS
+</p><p>Reti CAN BUS
 
 Nelle auto moderne sono presenti molte centraline elettroniche (ECU): motore, ABS, airbag, climatizzazione, quadro strumenti, ecc. Se ogni centralina fosse collegata alle altre con fili dedicati, il veicolo avrebbe:
 • chilometri di cablaggi
@@ -330,6 +330,7 @@ Con l’oscilloscopio si osservano due segnali speculari.
 
 
 </html>
+
 
 
 
