@@ -155,162 +155,154 @@ Nel caso del transistor PNP è necessario montarlo rovesciato, e dunque la corre
 
             <h2>Teoria sui segnali</h2>
             <p>Nel nostro campo il funzionamento di sensori, centraline e attuatori si basa sull’elaborazione di segnali elettrici. Un segnale elettrico è una grandezza, solitamente una tensione o una corrente, che varia nel tempo e che trasporta un’informazione.
-Un segnale analogico è un segnale che può assumere infiniti valori all’interno di un intervallo continuo. Questo tipo di segnale è particolarmente adatto a rappresentare fenomeni fisici reali, che cambiano gradualmente.
+Un <b>segnale analogico</b> è un segnale che può assumere infiniti valori all’interno di un intervallo continuo. Questo tipo di segnale è particolarmente adatto a rappresentare fenomeni fisici reali, che cambiano gradualmente.
 Esempio nell’auto: il sensore di temperatura del liquido di raffreddamento fornisce alla centralina una tensione analogica che varia, ipotizziamo, da 0,5 V (motore freddo) a 4,5 V (motore caldo). La variazione è continua e proporzionale alla temperatura.
             </p>
             
-<p>Un segnale analogico può essere misurato con:
-• multimetro (lettura del valore istantaneo)
-• oscilloscopio (visualizzazione della variazione nel tempo)
-Il principale svantaggio dei segnali analogici è la loro sensibilità ai disturbi elettrici, molto presenti nei veicoli auto o moto.
+<p>Un segnale analogico può essere misurato con:</p>
+<li> • multimetro (lettura del valore istantaneo)</li>
+<li> • oscilloscopio (visualizzazione della variazione nel tempo) </li>
+<p>Il principale svantaggio dei segnali analogici è la loro sensibilità ai disturbi elettrici, molto presenti nei veicoli auto o moto.</p>
 
-Un segnale digitale assume solo valori discreti, tipicamente due:
-• 0 logico (LOW)
-• 1 logico (HIGH)
+<p>Un <b>segnale digitale</b> assume solo valori discreti, tipicamente due:</p>
+<li> • 0 logico (LOW)</li>
+<li> • 1 logico (HIGH)</li>
                 
-Questi livelli corrispondono a specifici valori di tensione, ad esempio:
-• 0–1 V → LOW
-• 4–5 V → HIGH
-Esempio inerente l’auto:  un sensore di velocità ruota ABS genera un impulso che corrisponde al passaggio di un dente della ruota fonica davanti al sensore.
+<p>Questi livelli corrispondono a specifici valori di tensione, ad esempio:</p>
+<li> • 0–1 V → LOW </li>
+<li> • 4–5 V → HIGH </li>
+<p>Esempio inerente l’auto:  un sensore di velocità ruota ABS genera un impulso che corrisponde al passaggio di un dente della ruota fonica davanti al sensore.</p>
 
-Con un oscilloscopio si osserverebbe chiaramente una sequenza di impulsi, mentre con un multimetro si potrebbero leggere solo un valore medio, poco significativo.</p>
+<p>Con un oscilloscopio si osserverebbe chiaramente una sequenza di impulsi, mentre con un multimetro si potrebbero leggere solo un valore medio, poco significativo.</p>
 
-<p>Graficazione dei segnali
-Per studiare un segnale elettrico si utilizza una rappresentazione grafica (come visto in classe):
-• sull’asse orizzontale (X) è riportato il tempo
-• sull’asse verticale (Y) è riportata la tensione
+<h3>Graficazione dei segnali<h3>
+<p>Per studiare un segnale elettrico si utilizza una rappresentazione grafica (come visto in classe):</p>
+<li> • sull’asse orizzontale (X) è riportato il tempo</li>
+<li> • sull’asse verticale (Y) è riportata la tensione</li>
                 
-Questa rappresentazione permette di analizzare:
-• ampiezza del segnale
-• periodo e frequenza
-• forma d’onda
+<p>Questa rappresentazione permette di analizzare:</p>
+<li> • ampiezza del segnale</li>
+<li> • periodo e frequenza</li>
+<li> • forma d’onda</li>
                 
-Nel settore automotive è fondamentale riconoscere a colpo d’occhio se un segnale è corretto o alterato.</p>
+<p>Nel settore automotive è fondamentale riconoscere a colpo d’occhio se un segnale è corretto o alterato.</p>
 
-<p>Studio del segnale su oscilloscopio
+<h3>Studio del segnale su oscilloscopio</h3>
 
-L’oscilloscopio è lo strumento più importante per la diagnostica elettronica.
-Con l’oscilloscopio è possibile:
+<p>L’oscilloscopio è lo strumento più importante per la diagnostica elettronica.
+Con l’oscilloscopio è possibile:</p>
                 
-• osservare la forma del segnale
-• misurare tensione massima e minima
-• calcolare periodo e frequenza
-• individuare disturbi e anomalie
+<li> • osservare la forma del segnale</li>
+<li> • misurare tensione massima e minima</li>
+<li> • calcolare periodo e frequenza</li>
+<li> • individuare disturbi e anomalie </li>
                 
-Esempio pratico: Durante la diagnosi di un iniettore, l’oscilloscopio permette di visualizzare l’impulso di comando proveniente dalla centralina e verificare:
+<p>Esempio pratico: Durante la diagnosi di un iniettore, l’oscilloscopio permette di visualizzare l’impulso di comando proveniente dalla centralina e verificare:</p>
 
-• durata dell’impulso
-• presenza di sovratensioni
-• corretto pilotaggio dell’attuatore
+<li> • durata dell’impulso</li>
+<li> • presenza di sovratensioni</li>
+<li> • corretto pilotaggio dell’attuatore</li>
 
-Il multimetro, in questo caso, non sarebbe sufficiente.</p>
+<p>Il multimetro, in questo caso, non sarebbe sufficiente.</p>
 
-<p>Onda quadra 
+<h3>Onda quadra </h3>
 
-L’onda quadra è un segnale periodico che alterna due livelli di tensione ben definiti.
-È molto diffusa perché:
-• semplice da generare
-• facilmente riconoscibile
-• ideale per il controllo digitale
-Esempio: Il segnale di comando di una elettrovalvola o di un relè è spesso un’onda quadra.
+<p>L’onda quadra è un segnale periodico che alterna due livelli di tensione ben definiti.
+È molto diffusa perché:</p>
+<li> • semplice da generare </li>
+<li> • facilmente riconoscibile</li>
+<li> • ideale per il controllo digitale</li>
+<p>Esempio: Il segnale di comando di una elettrovalvola o di un relè è spesso un’onda quadra.
 
-Parametri importanti:
-• livello alto
-• livello basso
-• periodo
-• frequenza
+Parametri importanti:</p>
+<li> • livello alto</li>
+<li> • livello basso</li>
+<li> • periodo</li>
+<li> • frequenza</li>
 
-</p>
-<p>Modulazione PWM (Pulse Width Modulation)
 
-PWM è una tecnica che consente di controllare la potenza fornita a un carico variando il tempo di attivazione del segnale, mantenendo costante l’ampiezza.
+<h3>Modulazione PWM (Pulse Width Modulation)</h3>
+
+<p>PWM è una tecnica che consente di controllare la potenza fornita a un carico variando il tempo di attivazione del segnale, mantenendo costante l’ampiezza.
 Concetto chiave:  non si cambia la tensione, ma per quanto tempo viene applicata.
 
-Esempio nell’auto:  la velocità della ventola di raffreddamento o di un motore elettrico viene regolata variando il duty cycle del segnale PWM.
+Esempio nell’auto:  la velocità della ventola di raffreddamento o di un motore elettrico viene regolata variando il duty cycle del segnale PWM.</p>
 
-Misurazione elettrica:
-• con oscilloscopio → si vede chiaramente la variazione degli impulsi
-• con multimetro → si legge una tensione media
+<p>Misurazione elettrica:</p>
+<li> • con oscilloscopio → si vede chiaramente la variazione degli impulsi</li>
+<li> • con multimetro → si legge una tensione media</li>
 
-</p><p>Duty Cycle
+<h3>Duty Cycle</h3>
 
-Il duty cycle rappresenta la percentuale di tempo in cui il segnale è attivo (ON) rispetto al periodo totale.
-Formula:
+<p>>Il duty cycle rappresenta la percentuale di tempo in cui il segnale è attivo (ON) rispetto al periodo totale.
 
-Duty Cycle (%) = (Tempo ON / Periodo) × 100
-
-Esempi:
-• 20% → bassa potenza (attuatore poco attivo)
-• 50% → potenza media
-• 80% → alta potenza
-Nel controllo degli iniettori benzina, la quantità di carburante iniettata dipende direttamente dal duty cycle.
+Esempi:</p>
+<li> • 20% → bassa potenza (attuatore poco attivo)</li>
+<li> • 50% → potenza media</li>
+<li> • 80% → alta potenza</li>
+<p>Nel controllo degli iniettori benzina, la quantità di carburante iniettata dipende direttamente dal duty cycle.
 </p>
-<p>Trasduttori
+<h3>Trasduttori</h3>
 
-Un trasduttore è un dispositivo che trasforma una grandezza fisica in un segnale elettrico o viceversa.
+<p>Un trasduttore è un dispositivo che trasforma una grandezza fisica in un segnale elettrico o viceversa.
 
 I sensori forniscono alla centralina informazioni sullo stato del veicolo.
+    
+Esempi nell’auto:</p>
+<li> • sensore di pressione collettore</li>
+<li> • sensore posizione farfalla</li>
+<li> • sensore temperatura aria </li>
 
-Esempi nell’auto:
-• sensore di pressione collettore
-• sensore posizione farfalla
-• sensore temperatura aria
+<p>Gli attuatori trasformano il segnale elettrico in un’azione fisica.
 
-Gli attuatori trasformano il segnale elettrico in un’azione fisica.
-
-Esempi:
-• iniettori
-• elettrovalvole
-• motorini elettrici
+Esempi:</p>
+<li> • iniettori</li>
+<li> • elettrovalvole</li>
+<li> • motorini elettrici</li>
                 
-Sono spesso controllati tramite segnali PWM.
+<p>Sono spesso controllati tramite segnali PWM.</p>
 
-</p><p>Diagnostica centraline ECU
+<h3>Diagnostica centraline ECU</h3>
 
-Le centraline elettroniche controllano praticamente ogni sistema dell’auto moderna.
-
-La diagnostica elettronica permette di:
-• rilevare guasti
-• memorizzare codici errore (DTC)
-• proteggere i componenti
+<p>Le centraline elettroniche controllano praticamente ogni sistema dell’auto moderna.
                 
-La comunicazione tra centraline avviene tramite reti:
-• CAN
-• LIN
-• FlexRay
-Una corretta diagnosi richiede la conoscenza dei segnali elettrici e la capacità di interpretarli correttamente.
+La comunicazione tra centraline avviene tramite reti:</p>
+<li> • CAN</li>
+<li> • LIN</li>
+<li> • FlexRay</li>
+<p>Una corretta diagnosi richiede la conoscenza dei segnali elettrici e la capacità di interpretarli correttamente.</p>
 
-</p><p>Reti CAN BUS
+<h3>Reti CAN BUS</h3>
 
-Nelle auto moderne sono presenti molte centraline elettroniche (ECU): motore, ABS, airbag, climatizzazione, quadro strumenti, ecc. Se ogni centralina fosse collegata alle altre con fili dedicati, il veicolo avrebbe:
-• chilometri di cablaggi
-• maggior peso
-• maggiore probabilità di guasti
+<p>Nelle auto moderne sono presenti molte centraline elettroniche (ECU): motore, ABS, airbag, climatizzazione, quadro strumenti, ecc. Se ogni centralina fosse collegata alle altre con fili dedicati, il veicolo avrebbe:</p>
+<li> • chilometri di cablaggi</li>
+<li> • maggior peso</li>
+<li> • maggiore probabilità di guasti</li>
 
-Il CAN bus (Controller Area Network) nasce per permettere alle centraline di scambiarsi informazioni su una rete comune, riducendo cablaggi e aumentando l’affidabilità.
+<p>Il CAN bus (Controller Area Network) nasce per permettere alle centraline di scambiarsi informazioni su una rete comune, riducendo cablaggi e aumentando l’affidabilità.</p>
 
-Il CAN bus è una rete di comunicazione seriale:
-• multi-master (tutte le centraline possono trasmettere)
-• basata su messaggi (non su indirizzi)
-• molto robusta ai disturbi elettrici
-È stato sviluppato per funzionare in ambienti “ostili” come l’automotive (vibrazioni, rumore elettrico, temperature elevate).
+<p>Il CAN bus è una rete di comunicazione seriale:</p>
+<li> • multi-master (tutte le centraline possono trasmettere)</li>
+<li> • basata su messaggi (non su indirizzi)</li>
+<li> • molto robusta ai disturbi elettrici</li>
+<p>È stato sviluppato per funzionare in ambienti “ostili” come l’automotive (vibrazioni, rumore elettrico, temperature elevate).</p>
 
-Il CAN utilizza due fili intrecciati:
-• CAN High (CAN-H)
-• CAN Low (CAN-L)
+<p>Il CAN utilizza due fili intrecciati:</p>
+<li> • CAN High (CAN-H)</li>
+<li> • CAN Low (CAN-L)</li>
 
-Alle estremità della rete sono presenti resistenze di terminazione da 120 Ω, necessarie per evitare riflessioni del segnale.
+<p>Alle estremità della rete sono presenti resistenze di terminazione da 120 Ω, necessarie per evitare riflessioni del segnale.</p>
 
-Guasti
-• interruzione di un filo CAN-H o CAN-L
-• corto a massa o a positivo
-• resistenza di terminazione errata
+<p>Guasti</p>
+<li> • interruzione di un filo CAN-H o CAN-L</li>
+<li> • corto a massa o a positivo</li>
+<li> • resistenza di terminazione errata</li>
 
-Controlli tipici 
-• resistenza tra CAN-H e CAN-L ≈ 60 Ω (due resistenze da 120 Ω in parallelo)
+<p>Controlli tipici </p>
+<li> • resistenza tra CAN-H e CAN-L ≈ 60 Ω (due resistenze da 120 Ω in parallelo)</li>
 
-Con l’oscilloscopio si osservano due segnali speculari.
-</p>
+<p>Con l’oscilloscopio si osservano due segnali speculari.</p>
+
 </main>
 
 
@@ -330,6 +322,7 @@ Con l’oscilloscopio si osservano due segnali speculari.
 
 
 </html>
+
 
 
 
