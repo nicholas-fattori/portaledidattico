@@ -153,6 +153,39 @@ Nel caso del transistor PNP è necessario montarlo rovesciato, e dunque la corre
 <li>MOSFET può gestire cambi di stato con frequenze nell’ordine dei MHz</li>
 <li>BJT riesce a gestire frequenze di commutazione al di sotto dei 100 kHz</li>
 
+<h2>Circuiti stampati</h2>
+<p>Un circuito stampato detto PCB (Printed Circuit Board) è un supporto isolante (solitamente fibra di vetro con resina epossidica, ossia che passa da stato liquido a solido diventando impermeabile, resistente e lucido) con piste di rame incise che collegano componenti elettronici.</p>
+      <p>Una volta progettato in CAD, viene creato un substrato rivestendo una lastra di rame in entrambi i lati, applicando poi un photoresist, ossia un polimero che cambia le proprie proprietà strutturali a contatto con i raggi UV. Viene rimosso il rame non protetto (etching) e creati i fori che ospiteranno i componenti.</p>      
+        <p>I fori vengono metalizzati e poi applicato uno strato protettivo di vari colori detto solder mask.</p>
+           <p>I circuiti stampati differiscono per numero di strati (layers):</p>
+            <li> monostrato </li>
+            <li> bistrato </li>
+            <li> multistrato </li>
+            Inoltre possono essere:
+            <li> rigidi </li>
+            <li> flessibili </li>
+            <li> semi-flessibili</li>
+            
+<p>Come porte logiche è importante ricordare: </p>
+            <li>AND -> 1 se tutti INPUT = 1 </li>
+            <li>OR -> 1 se almeno uno = 1 </li>
+            <li>NOT -> inversione </li>
+            <li>XOR -> 1 se INPUT diversi </li>
+
+            <p> Quando i circuiti integrati digitali hanno porte logiche caratterizzate dalla sola presenza di transistor bipolari si parla di tecnologia TTL (Transistor-Transistor Logic), più datata, che opera a 5V fissi con alto consumo.</p>
+            <p> La tecnologia CMOS (Complementary MOS) più moderna e attuale, invece, usa MOSFET a basso consumo (soprattutto a riposo) funzionanti a 3-15V ed alta immunità ai rumori, ed ha un'impedenza di ingresso molto alta.</p>
+          <p>Considerazione: la serie 74HCT è progettata specificamente per essere compatibile con i livelli di tensione TTL.</p>
+
+            <p>Il trigger flip-flop è un circuito sequenziale che memorizza 1 bit usato in registri e contatori. Con più flip-flop si ottiene un counter.</p>
+           <p>Esempi:</p> 
+            <li> SR latch</li>
+          <li> D flip-flop</li> 
+          <li> JK flip-flop</li> 
+          <li> T flip-flop</li> 
+            <p>Le interferenze EMI sono disturbi elettromagnetici che degradano i segnali, causati ad esempio da switching, clock e motori.</p>
+           <p>Le scariche elettrostatiche ESD sono causate da cariche accumulate (anche >10kV) e possono distruggere MOSFET, integrati e sensori.</p>
+            <p>Il conformal coating è un rivestimento protettivo sottile applicato sulla scheda.</p>
+            
             <h2>Teoria sui segnali</h2>
             <p>Nel nostro campo il funzionamento di sensori, centraline e attuatori si basa sull’elaborazione di segnali elettrici. Un segnale elettrico è una grandezza, solitamente una tensione o una corrente, che varia nel tempo e che trasporta un’informazione.
 Un <b>segnale analogico</b> è un segnale che può assumere infiniti valori all’interno di un intervallo continuo. Questo tipo di segnale è particolarmente adatto a rappresentare fenomeni fisici reali, che cambiano gradualmente.
