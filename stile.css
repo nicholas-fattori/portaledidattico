@@ -28,7 +28,7 @@ nav {
     margin: 1%;
     padding: 1%;
     display: flex;
-    justify-content: content;
+    justify-content: center;
 }
 main {
     float: center;
